@@ -2,7 +2,6 @@
 
 * **id** 
     * Desc: uuid for this receipt
-    * Parsed from *\_id:**
     * is primary key
 * **bonus_points_earned**
     * Desc: Number of bonus points that were awarded upon receipt completion
@@ -39,7 +38,6 @@
 From my investigation this table contains many duplicate rows. Every duplicate user has the same row data, so when parsing the data, if the user is already in the database it is skipped.
 * **id** 
     * Desc: user Id
-    * Parsed from *\_id:**
     * is primary key
 * **state**
     * Desc: state abbreviation
@@ -51,12 +49,12 @@ From my investigation this table contains many duplicate rows. Every duplicate u
     * Desc: constant value set to 'CONSUMER'
 * **active**
     * Desc: indicates if the user is active; only Fetch will de\-activate an account with this flag
+* **sign_up_source**
+    * Desc: indicates where the user signed up from
 
 ### Brand
 * **id** 
     * Desc: brand uuid
-    * Parsed from *\_id:**
-    * is primary key
 * **brand_code**
     * Desc: String that corresponds with the brand column in a partner product file
     * Desc: Brand name
@@ -69,10 +67,18 @@ From my investigation this table contains many duplicate rows. Every duplicate u
     * Desc: The category code that references a BrandCategory
 * **cpg_id**
     * Desc: reference to CPG collection
+    * Parsed from **cpg**
+* **cpg_ref**
+    * Parsed from **cpg**
 * **top_brand**
     * Desc: Boolean indicator for whether the brand should be featured as a 'top brand'
 
 ### Transactions
+This data is from the receipts data.
+
+* **id** 
+    * Desc: transaction id, auto incremented
+    * is primary key
 * **barcode**
     * Desc: the barcode on the item
 * **brand_code**

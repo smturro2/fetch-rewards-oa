@@ -1,13 +1,9 @@
-from database import ConsumerDatabase
+import pandas as pd
+from datetime import datetime
 
-db = ConsumerDatabase()
+from database.database import Database
+from database.models import Brand, Receipt, Transaction, User
+from sqlalchemy import func, and_
 
-# Check connection to the database
-db.check_connection()
+db = Database()
 
-db.get_top_5_brands_recent_month()
-db.compare_top_5_brands_recent_previous_month()
-db.compare_average_spend()
-db.compare_total_items_purchased()
-db.brand_with_most_spend_recent_users()
-db.brand_with_most_transactions_recent_users()

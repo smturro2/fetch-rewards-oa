@@ -12,6 +12,7 @@ ipykernel = "*"
 sqlalchemy = "*"
 ijson = "*"
 psycopg2 = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.11"
