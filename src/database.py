@@ -7,6 +7,7 @@ from sqlalchemy import (Table, Column, String, Integer, Float,
                         create_engine, MetaData, func, desc, extract)
 from datetime import datetime, timedelta
 
+
 class ConsumerDatabase:
     def __init__(self):
         self.user = os.getenv("POSTGRES_USER")
