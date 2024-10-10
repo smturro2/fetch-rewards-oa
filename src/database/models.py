@@ -40,7 +40,9 @@ class User(Base):
 class Brand(Base):
     __tablename__ = 'brands'
     id = Column(String, primary_key=True)
-    brand_code = Column(String)
+    brand_code = Column(String,
+                        # unique=True
+                        )
     barcode = Column(String)
     name = Column(String)
     category = Column(String)
@@ -55,7 +57,9 @@ class Transaction(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     receipt_id = Column(String, ForeignKey('receipts.id'))
     barcode = Column(String)
-    brand_code = Column(String)
+    brand_code = Column(String,
+                        # ForeignKey('brands.brand_code') Not unique brand_code
+                        )
     description = Column(String)
     item_price = Column(Float)
     target_price = Column(Float)

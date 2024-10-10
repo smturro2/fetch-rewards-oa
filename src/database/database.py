@@ -59,7 +59,7 @@ class Database:
         inspector = inspect(self.engine)
         return inspector.has_table(table_name)
 
-    def _process_raw_data(self, path=f'../data'):
+    def _process_raw_data(self, path=f'data'):
         # Ensure tables are created and populated
         tables_to_populate = [table_name for table_name in self.tables
                               if not self._create_table(table_name)]
