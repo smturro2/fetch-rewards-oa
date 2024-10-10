@@ -13,8 +13,8 @@ sqlalchemy = "*"
 ijson = "*"
 psycopg2 = "*"
 python-dotenv = "*"
-eralchemy = "*"
-sqlalchemy-schemadisplay = "*"
+# eralchemy = "*"
+# sqlalchemy-schemadisplay = "*"
 
 [requires]
 python_version = "3.11"

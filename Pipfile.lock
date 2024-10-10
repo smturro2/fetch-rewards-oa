@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a2162520f3c8bccd535eda43eab96ff0235bf444a54ac60843da956e078bceda"
+            "sha256": "0ba91fb15a22196f3b836d0759912e16ddea24ac9ad350864eafc894ef26cf02"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -166,18 +166,6 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==5.1.1"
-        },
-        "eralchemy": {
-            "extras": [
-                "pygraphviz"
-            ],
-            "hashes": [
-                "sha256:c87099aa1a4ac313df690cbe4eb642b596a635fc6b578f7963ce9570994dccc8",
-                "sha256:fa66a3cd324abd27ad8e65908d7af48d8198c0c185aeb22189cf40516de25941"
-            ],
-            "index": "pypi",
-            "markers": "python_version >= '3.8'",
-            "version": "==1.5.0"
         },
         "executing": {
             "hashes": [
@@ -929,14 +917,6 @@
             ],
             "version": "==0.2.3"
         },
-        "pydot": {
-            "hashes": [
-                "sha256:9180da540b51b3aa09fbf81140b3edfbe2315d778e8589a7d0a4a69c41332bae",
-                "sha256:99cedaa55d04abb0b2bc56d9981a6da781053dd5ac75c428e8dd53db53f90b14"
-            ],
-            "markers": "python_version >= '3.8'",
-            "version": "==3.0.2"
-        },
         "pygments": {
             "hashes": [
                 "sha256:786ff802f32e91311bff3889f6e9a86e81505fe99f2735bb6d60ae0c5004f199",
@@ -1116,14 +1096,6 @@
             "markers": "python_version >= '3.7'",
             "version": "==26.2.0"
         },
-        "setuptools": {
-            "hashes": [
-                "sha256:35ab7fd3bcd95e6b7fd704e4a1539513edad446c097797f2985e0e4b960772f2",
-                "sha256:d59a21b17a275fb872a9c3dae73963160ae079f1049ed956880cd7c09b120538"
-            ],
-            "markers": "python_version >= '3.8'",
-            "version": "==75.1.0"
-        },
         "six": {
             "hashes": [
                 "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
@@ -1195,15 +1167,6 @@
             "index": "pypi",
             "markers": "python_version >= '3.7'",
             "version": "==2.0.35"
-        },
-        "sqlalchemy-schemadisplay": {
-            "hashes": [
-                "sha256:e4b928e2aec145f72a2b35de7855a78fca5e09ac4d48f2d58b4472cb640cd362",
-                "sha256:e90b9c9868814975d674a889aadb7c4651658f0e119e1c9320279ea527744d5e"
-            ],
-            "index": "pypi",
-            "markers": "python_version >= '3.8'",
-            "version": "==2.0"
         },
         "stack-data": {
             "hashes": [
