@@ -4,14 +4,14 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flask = "*"
-matplotlib = "*"
+pandas = "*"
 numpy = "*"
-scipy = "*"
-quantum-tomography = "*"
-gunicorn = "*"
-
-[dev-packages]
+matplotlib = "*"
+markdownify = "*"
+ipykernel = "*"
+sqlalchemy = "*"
+ijson = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.11"
